@@ -9,7 +9,7 @@ from odoo import api, fields, models
 class ResCountryState(models.Model):
     _inherit = 'res.country.state'
 
-    @api.multi
+    # @api.multi
     def name_get(self):
         res = []
         for state in self:
